@@ -25,6 +25,8 @@ The collection includes 40 Lambda functions that can be deployed individually or
 - **07_dynamodb_backup_manager.py**: Manages DynamoDB table backups
 - **17_ebs_volume_snapshot_manager.py**: Creates and manages EBS volume snapshots
 - **33_aws_neptune_backup_manager.py**: Manages Amazon Neptune database backups
+- **46_aws_fsx_backup_manager.py**: Manages backups for Amazon FSx file systems
+- **49_aws_documentdb_cluster_manager.py**: Manages AWS DocumentDB cluster snapshots and maintenance
 
 ### Monitoring & Logging
 - **03_cloudwatch_logs_exporter.py**: Exports CloudWatch logs to S3 for archiving
@@ -36,6 +38,9 @@ The collection includes 40 Lambda functions that can be deployed individually or
 - **27_step_functions_monitor.py**: Monitors AWS Step Functions executions
 - **28_aws_glue_job_monitor.py**: Monitors AWS Glue ETL jobs
 - **38_aws_sagemaker_model_monitor.py**: Monitors SageMaker models and endpoints
+- **45_aws_data_pipeline_monitor.py**: Monitors AWS Data Pipeline status and health
+- **47_aws_appsync_api_monitor.py**: Monitors AWS AppSync API health and performance
+- **48_aws_msk_cluster_monitor.py**: Monitors AWS Managed Streaming for Kafka (MSK) clusters
 
 ### Security & Compliance
 - **05_security_group_auditor.py**: Audits security groups for risky configurations
@@ -48,6 +53,7 @@ The collection includes 40 Lambda functions that can be deployed individually or
 - **32_kms_key_rotation_manager.py**: Manages KMS key rotation
 - **39_aws_guardduty_findings_processor.py**: Processes and responds to GuardDuty findings
 - **40_aws_ssm_patch_compliance_reporter.py**: Reports on Systems Manager patch compliance
+- **44_aws_systems_manager_parameter_store_updater.py**: Manages parameters in AWS Systems Manager Parameter Store
 
 ### Cost Optimization
 - **06_cost_optimization_advisor.py**: Identifies cost optimization opportunities
