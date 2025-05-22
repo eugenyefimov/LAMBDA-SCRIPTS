@@ -65,6 +65,9 @@ The collection includes 40 Lambda functions that can be deployed individually or
 ### Governance & Management
 - **19_aws_resource_tagger.py**: Automatically tags AWS resources
 - **21_organizations_policy_analyzer.py**: Analyzes AWS Organizations policies
+- **41_aws_waf_rule_updater.py**: Manages AWS WAF rules, such as updating IP sets
+- **42_cloudformation_stack_drift_detector.py**: Detects drift in CloudFormation stacks
+- **43_ecr_image_vulnerability_scanner.py**: Initiates or processes ECR image vulnerability scans
 
 ## Usage
 
