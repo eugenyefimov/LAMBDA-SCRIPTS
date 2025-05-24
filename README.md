@@ -8,7 +8,7 @@ This repository contains a collection of AWS Lambda functions designed to automa
 
 ## Overview
 
-The collection includes 40 Lambda functions that can be deployed individually or as part of a comprehensive AWS management solution. Each script is designed to address specific operational needs within AWS environments.
+The collection includes 55 Lambda functions that can be deployed individually or as part of a comprehensive AWS management solution. Each script is designed to address specific operational needs within AWS environments.
 
 ## Scripts Included
 
@@ -29,18 +29,34 @@ The collection includes 40 Lambda functions that can be deployed individually or
 - **49_aws_documentdb_cluster_manager.py**: Manages AWS DocumentDB cluster snapshots and maintenance
 
 ### Monitoring & Logging
-- **03_cloudwatch_logs_exporter.py**: Exports CloudWatch logs to S3 for archiving
-- **08_lambda_function_monitor.py**: Monitors Lambda functions for errors and performance issues
-- **12_cloudtrail_event_analyzer.py**: Analyzes CloudTrail events for suspicious activities
-- **14_route53_health_check_monitor.py**: Monitors Route53 health checks and DNS records
-- **15_backup_verification.py**: Verifies AWS Backup jobs and recovery points
-- **23_elb_monitoring_analyzer.py**: Monitors ELB/ALB/NLB metrics and configurations
-- **27_step_functions_monitor.py**: Monitors AWS Step Functions executions
+- **03_cloudwatch_logs_exporter.py**: Exports CloudWatch Logs to S3
+- **08_lambda_function_monitor.py**: Monitors Lambda function performance and errors
+- **11_vpc_flow_logs_analyzer.py**: Analyzes VPC Flow Logs for traffic patterns
+- **12_cloudtrail_event_analyzer.py**: Analyzes CloudTrail events for security and operational insights
+- **14_route53_health_check_monitor.py**: Monitors Route 53 health checks
+- **23_elb_monitoring_analyzer.py**: Analyzes ELB access logs and metrics
+- **25_elastic_beanstalk_monitor.py**: Monitors Elastic Beanstalk environments
+- **27_step_functions_monitor.py**: Monitors AWS Step Functions state machines
 - **28_aws_glue_job_monitor.py**: Monitors AWS Glue ETL jobs
+- **36_aws_transfer_family_monitor.py**: Monitors AWS Transfer Family server activity
+- **37_aws_batch_job_monitor.py**: Monitors AWS Batch job statuses
 - **38_aws_sagemaker_model_monitor.py**: Monitors SageMaker models and endpoints
 - **45_aws_data_pipeline_monitor.py**: Monitors AWS Data Pipeline status and health
 - **47_aws_appsync_api_monitor.py**: Monitors AWS AppSync API health and performance
 - **48_aws_msk_cluster_monitor.py**: Monitors AWS Managed Streaming for Kafka (MSK) clusters
+- **50_aws_codecommit_repository_monitor.py**: Monitors AWS CodeCommit repository events
+- **51_aws_dms_task_monitor.py**: Monitors AWS Database Migration Service (DMS) tasks
+- **53_aws_mq_broker_monitor.py**: Monitors AWS MQ (Amazon MQ) brokers
+- **54_aws_eks_cluster_monitor.py**: Monitors AWS Elastic Kubernetes Service (EKS) clusters
+
+### DevOps & Automation
+- **09_ecs_autoscaling_manager.py**: Manages ECS service auto-scaling
+- **16_cloudfront_cache_invalidator.py**: Invalidates CloudFront cache upon S3 updates
+- **18_sqs_dead_letter_queue_processor.py**: Processes messages from SQS dead-letter queues
+- **30_aws_emr_cluster_manager.py**: Manages EMR cluster lifecycle (start, stop, resize)
+- **31_eventbridge_rule_manager.py**: Manages EventBridge (CloudWatch Events) rules
+- **52_aws_glue_data_catalog_manager.py**: Manages AWS Glue Data Catalog (databases, tables)
+- **55_aws_redshift_cluster_maintenance_scheduler.py**: Manages Redshift cluster maintenance schedules
 
 ### Security & Compliance
 - **05_security_group_auditor.py**: Audits security groups for risky configurations
